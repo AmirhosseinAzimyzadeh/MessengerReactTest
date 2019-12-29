@@ -1,7 +1,7 @@
 import React from 'react';
-import MessageBox from './messegeBox';
+import MessageBox from './messageBox';
 //style:
-import '../componentStyle/messegeListView.css'
+import '../componentStyle/messageListView.css'
 //
 function MessageListView(prop) {
     return (

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../componentStyle/messegeSection.css'
+import '../componentStyle/messageSection.css'
 //components :
 import TextBoxContainer from './textBoxContainer'
 import EmojiContainer from './EmojiContainer'

@@ -16,7 +16,7 @@ function Header(prop) {
     <div>
       <div id="status" style={style}></div>
       <div id="appHeader">
-        <p id="title">Messanger !</p>
+        <p id="title">Messenger !</p>
       </div>
     </div>
   );
