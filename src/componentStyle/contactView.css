@@ -1,0 +1,62 @@
+#contactView {
+  background-color: #292929;
+  margin: 3px;
+  border-radius: 5px;
+  height: 60px;
+  transition: 0.3s;
+}
+
+#contactView:hover {
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.11);
+}
+#contactView:active {
+  box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.11);
+}
+
+#pictureHolder {
+  background-color: rgb(27, 27, 27);
+  position: relative;
+  width: 50px;
+  height: 50px;
+  left: 7px;
+  top: 5px;
+  border-radius: 100px;
+}
+
+#nameHolder {
+  position: absolute;
+  left: 70px;
+  color: rgba(255, 255, 255, 0.726);
+  font-family: "Quicksand", sans-serif;
+  user-select: none;
+  margin-top: 20px;
+  margin-left: 2px;
+}
+#pt {
+  display: flex;
+}
+#statusDot {
+  background-color: #2ba450;
+  width: 8px;
+  height: 8px;
+  border-radius: 30px;
+  margin-top: 40px;
+  margin-left: -4px;
+  z-index: 100;
+  border: solid #292929;
+  transition: 0.3s;
+}
+@media only screen and (max-width: 700px) {
+  #nameHolder {
+    display: none;
+  }
+  #contactView {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  #contactView:hover {
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0.11);
+  }
+  #statusDot {
+    border: 2px solid #303030;
+  }
+}

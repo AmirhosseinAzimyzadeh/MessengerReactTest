@@ -1,0 +1,22 @@
+#textBox {
+  outline: none;
+  border: 0;
+  background-color: rgb(255, 255, 255, 0);
+  position: relative;
+  width: 99%;
+  margin-top: 8px;
+  padding-right: 4px;
+  padding-left: 4px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.904);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 100;
+  user-select: none;
+  
+}
+ 
+#tHolder{
+    position: absolute;
+    right: 50px;
+    left: 3px;
+}

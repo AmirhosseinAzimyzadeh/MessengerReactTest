@@ -1,0 +1,30 @@
+#textBoxContainer{
+    background-color: rgb(32, 32, 32);
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    left: 5px;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    padding: 3px;
+}
+#emojiContainer{
+    position: absolute;
+    right: 3px;
+    top:3px;
+    bottom: 3px;
+    border-radius: 100px;
+    transition: 0.3s;
+    padding: 5px;
+}
+
+#imageIcon{
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+#imageIcon:hover{
+    width: 35px;
+    height: 35px;
+}

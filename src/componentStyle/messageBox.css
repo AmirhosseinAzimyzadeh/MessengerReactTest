@@ -1,0 +1,39 @@
+#messageBoxContainer {
+  margin-top: 3px;
+  /* background-color: rgb(61, 61, 61); */
+  min-height: 60px;
+  padding: 2px;
+  height: auto;
+  overflow: auto;
+}
+
+#message {
+  position: relative;
+  float: right;
+  background-color: #292929;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px 10px 0px 10px;
+  padding: 7px;
+  text-align: left;
+  transition: 0.5s;
+}
+#message p {
+    font-family: 'Quicksand', sans-serif;
+    color: rgba(255, 255, 255, 0.6);
+}
+#recDate{
+    color: rgba(118, 247, 197, 0.6);
+    font-size: 12px;
+    user-select: none;
+}
+#senderName{
+    color: rgba(118, 247, 197, 0.6);
+    user-select: none;
+    font-weight: bold;
+}
+@media only screen and (max-width: 700px) {
+      #message {
+    max-width: 200px;
+    }
+}

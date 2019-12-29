@@ -1,0 +1,16 @@
+#messageListView {
+  position: absolute;
+  top: 4px;
+  bottom: 55px;
+  right: 5px;
+  left: 5px;
+  border-radius: 5px;
+  text-align: center;
+  overflow: auto;
+  /*hide scrollbar for mozilla*/
+  scrollbar-width: 0px;
+}
+*::-webkit-scrollbar {
+  /*hide scrollbar in chrome*/
+  width: 0em;
+}
