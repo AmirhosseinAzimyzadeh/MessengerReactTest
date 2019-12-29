@@ -3,7 +3,7 @@ import '../componentStyle/main.css'
 
 // inner components
 import ContactList from '../components/contactList'
-import MessageSection from '../components/messageSection'
+import MessageSection from '../components/messegeSection'
 
 // simulate data ==>
 import contactList from '../data/ContactsData'

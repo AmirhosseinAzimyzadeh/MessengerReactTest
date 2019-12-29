@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import '../componentStyle/messageSection.css'
+import '../componentStyle/messegeSection.css'
 //components :
 import TextBoxContainer from './textBoxContainer'
 import EmojiContainer from './EmojiContainer'
-import MessageListView from './MessageListView'
+import MessageListView from './MessegeListView'
 
 class MessageSection extends Component{
     constructor(){

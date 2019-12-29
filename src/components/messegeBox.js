@@ -1,5 +1,5 @@
 import React from 'react';
-import '../componentStyle/messageBox.css'
+import '../componentStyle/messegeBox.css'
 /*
     Message Structure:
         contex : whole text of message
