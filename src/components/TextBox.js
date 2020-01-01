@@ -6,12 +6,13 @@ class TextBox extends Component {
         this.handlePressEnter = this.handlePressEnter.bind(this);
     }
     //handle message from user
+    // callback function to send date to parent
     handlePressEnter(event) {
         let message;
         if(event.key === 'Enter'){
             console.log('Enter pressed')
             message = event.target.value;
-            console.log(message);
+            console.log('message : ',message);
             event.target.value = ""
         }
     }

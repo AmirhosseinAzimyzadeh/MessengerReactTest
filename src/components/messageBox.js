@@ -2,7 +2,7 @@ import React from 'react';
 import '../componentStyle/messageBox.css'
 /*
     Message Structure:
-        contex : whole text of messege
+        context : whole text of messege
         sender : id of sender person
         receiver : id of receiver person
         sentDate : date that sender sent messege
@@ -12,11 +12,9 @@ function messegeBox(prop) {
     return (
         <div id="messageBoxContainer">
             <div id="message">
-                <div id="senderName">You:</div>
-                <p>
-                    this is messege Test paragraph for testing messege box style - from simulated data
-                </p>
-                <div id="recDate">29 Dec. 20:45</div>
+                <div id="senderName">{prop.message.sender}</div>
+                <p>{prop.message.context}</p>
+                <div id="recDate">{prop.message.sentDate}</div>
             </div>
         </div>
     );
