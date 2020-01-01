@@ -9,15 +9,18 @@ import messagesData from '../data/messagesData'
 class MessageSection extends Component{
     constructor(){
         super()
+        this.addNewMessage = this.addNewMessage.bind(this)
         this.state={
             messages: messagesData
         }
     }
-
+    addNewMessage(msg){
+        console.log('from message section: ',msg);
+    }
     render(){
         return(
             <div id="messageSectionContainer">
-                <TextBoxContainer />
+                <TextBoxContainer addMessage={this.addNewMessage} />
                 <MessageListView 
                 messagesList = {this.state.messages} />
             </div>
