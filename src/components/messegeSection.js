@@ -16,6 +16,11 @@ class MessageSection extends Component{
     }
     addNewMessage(msg){
         console.log('from message section: ',msg);
+        let newMessages = this.state.messages.map(x => x)
+        newMessages.push(msg);
+        this.setState({
+            messages:newMessages
+        });
     }
     render(){
         return(
