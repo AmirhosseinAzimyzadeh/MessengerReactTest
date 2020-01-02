@@ -12,16 +12,32 @@ import '../componentStyle/messageListView.css'
         recDate : date that receiver see Msg.
 */
 
-function MessageListView(prop) {
-    let messages = prop.messagesList;
-    let renderList = <p>nothing find</p>;
-    if(messages !== undefined){
-        renderList = messages.map(message => <MessageBox message={message} />);
+class MessageListView extends React.Component {
+    constructor(prop) {
+        super(prop)
+        this.state = {
+            renderList: []
+        }
     }
-    return (
-        <div id="messageListView">
-            {renderList}
-        </div>
-    );
+
+    static getDerivedStateFromProps(prop, state) {
+        let messages = prop.messagesList;
+        let renderList = <p>nothing find</p>;
+        if (messages !== undefined) {
+            renderList = messages.map(message => <MessageBox message={message} />);
+        }
+        return {
+            renderList: renderList
+        };
+    }
+
+    render() {
+        return (
+            <div 
+                id="messageListView">
+                {this.state.renderList}
+            </div>
+        );
+    }
 }
 export default MessageListView;
