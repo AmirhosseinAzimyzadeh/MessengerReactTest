@@ -1,0 +1,7 @@
+#EmojiList {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(53, 53, 53);
+    transition: 0.5s;
+}

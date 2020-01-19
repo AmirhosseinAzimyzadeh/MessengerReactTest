@@ -8,7 +8,7 @@ import '../componentStyle/messageBox.css'
         sentDate : date that sender sent messege
         recDate : date that receiver see Msg.
 */
-function messegeBox(prop) {
+function messageBox(prop) {
     return (
         <div id="messageBoxContainer">
             <div id="message">
@@ -20,4 +20,4 @@ function messegeBox(prop) {
     );
 }
 
-export default messegeBox;
+export default messageBox;

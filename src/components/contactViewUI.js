@@ -8,26 +8,24 @@ function ContactViewUI(props) {
         profilePicture = props.contact.profilePicture;
         isOnline = props.contact.isOnline;
     } else {
-        name = "loading ..."
-        isOnline = false
-        profilePicture = ""
+        name = "loading ...";
+        isOnline = false;
+        profilePicture = "";
     }
     if (name.length > 20) {
         name = name.substring(0, 15) + "..."
     }
-    const statusStle = {
+    const statusStyle = {
         display : !isOnline ? "none" : ""
-    }
-
-    const url=""
+    };
 
 
     return (
         <div id="pt">
             <div id="pictureHolder">
-                <img src={profilePicture}/>
+                <img alt="not found" src={profilePicture}/>
             </div>
-            <div style={statusStle} id="statusDot"></div>
+            <div style={statusStyle} id="statusDot" />
             <div id="nameHolder">{name}</div>
         </div>
     );

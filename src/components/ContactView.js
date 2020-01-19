@@ -4,11 +4,7 @@ import ContactViewUI from './contactViewUI'
 
 class ContactView extends Component {
     constructor(props) {
-        super(props)
-
-
-
-
+        super(props);
         ///
         this.state = {
             contact: props.contact
