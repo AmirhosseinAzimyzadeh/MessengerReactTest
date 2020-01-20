@@ -23,7 +23,7 @@ function ContactViewUI(props) {
     return (
         <div id="pt">
             <div id="pictureHolder">
-                <img alt="not found" src={profilePicture}/>
+                <img src={profilePicture}/>
             </div>
             <div style={statusStyle} id="statusDot" />
             <div id="nameHolder">{name}</div>

@@ -9,9 +9,17 @@ import '../componentStyle/messageBox.css'
         recDate : date that receiver see Msg.
 */
 function messageBox(prop) {
+    const isYou = prop.message.sender === "You";
+    const messageStyle = {
+      float : isYou? 'right' : 'left',
+      borderRadius : isYou ?'10px 10px 0px 10px' : '10px 10px 10px 0px'
+    };
     return (
         <div id="messageBoxContainer">
-            <div id="message">
+            <div
+                id="message"
+                style={messageStyle}
+            >
                 <div id="senderName">{prop.message.sender}</div>
                 <p>{prop.message.context}</p>
                 <div id="recDate">{prop.message.sentDate}</div>

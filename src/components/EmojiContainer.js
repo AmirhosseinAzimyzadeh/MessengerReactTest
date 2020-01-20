@@ -7,7 +7,6 @@ class Emoji extends Component{
         super(props);
         //bounding methods
         this.onMouseEnter = this.onMouseEnter.bind(this);
-        this.onMouseLeave = this.onMouseLeave.bind(this);
         this.state = {
             showList : false
         }
@@ -15,23 +14,14 @@ class Emoji extends Component{
     onMouseEnter(){
         this.setState({showList : true});
     }
-    onMouseLeave(){
-        this.setState({showList:false});
-    }
 
     render(){
         return(
-            <div>
-            <EmojiList
-                show={this.state.showList}
-            />
             <div
                 id="emojiContainer"
                 onMouseEnter={this.onMouseEnter}
-                onMouseLeave={this.onMouseLeave}
             >
                 <img alt="Emoji" id="imageIcon" src={EmojiIcon}/>
-            </div>
             </div>
         );
     }

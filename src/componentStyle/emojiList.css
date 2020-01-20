@@ -1,7 +1,10 @@
 #EmojiList {
+    position: relative;
     display: flex;
     width: 200px;
-    height: 200px;
+    height: 40px;
+    border-radius: 3px;
+    margin-right: 3px;
     background-color: rgb(53, 53, 53);
-    transition: 0.5s;
+    float: right;
 }

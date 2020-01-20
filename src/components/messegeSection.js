@@ -7,16 +7,16 @@ import MessageListView from './MessegeListView'
 //simulated data
 import messagesData from '../data/messagesData'
 class MessageSection extends Component{
-    constructor(){
-        super()
-        this.addNewMessage = this.addNewMessage.bind(this)
+    constructor(props){
+        super(props);
+        this.addNewMessage = this.addNewMessage.bind(this);
         this.state={
             messages: messagesData
         }
     }
     addNewMessage(msg){
         console.log('from message section: ',msg);
-        let newMessages = this.state.messages.map(x => x)
+        let newMessages = this.state.messages.map(x => x);
         newMessages.push(msg);
         this.setState({
             messages:newMessages
@@ -25,9 +25,12 @@ class MessageSection extends Component{
     render(){
         return(
             <div id="messageSectionContainer">
-                <TextBoxContainer addMessage={this.addNewMessage} />
+                <TextBoxContainer
+                    addMessage={this.addNewMessage}
+                />
                 <MessageListView 
-                messagesList = {this.state.messages} />
+                messagesList = {this.state.messages}
+                />
             </div>
         );
     }

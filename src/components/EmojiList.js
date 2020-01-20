@@ -2,14 +2,13 @@ import React from "react";
 import '../componentStyle/emojiList.css'
 function EmojiList(prop){
     const style = {
-        display : prop.show ? 'inline' : 'none'
+        visibility : prop.show ? 'visible' : 'hidden'
     };
     return(
         <div
             id="EmojiList"
             style={style}
         >
-            Emoji List Here
         </div>
     );
 }

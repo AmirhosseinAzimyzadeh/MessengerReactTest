@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../componentStyle/textbox.css'
 class TextBox extends Component {
     constructor(prop) {
-        super(prop)
+        super(prop);
         this.handlePressEnter = this.handlePressEnter.bind(this);
         this.state = {
             addMessage: prop.addMessage

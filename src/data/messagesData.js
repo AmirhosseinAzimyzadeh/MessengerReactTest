@@ -1,11 +1,11 @@
 const messages = [
     {
-        context: "this is test message from you all data in this app simulated there is no server",
+        context: "this is a test message, all data in this app simulated there is no server",
         sentDate: "21 Dec 2019",
         sender: "You"
     },
     {
-        context: "this is test message from you all data in this app simulated there is no server, UI/UX developed in React",
+        context: "Developed in React js",
         sentDate: "21 Dec 2019",
         sender: "Luke"
     },
