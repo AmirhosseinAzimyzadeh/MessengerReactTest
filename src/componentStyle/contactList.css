@@ -29,4 +29,5 @@
 *::-webkit-scrollbar {
   /*hide scrollbar in chrome*/
   width: 0em;
+  display: none;
 }

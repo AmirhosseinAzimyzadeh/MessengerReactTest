@@ -11,6 +11,7 @@
   scrollbar-width: 0px;
 }
 *::-webkit-scrollbar {
-  /*hide scrollbar in chrome*/
+  /*hide scrollbar in browser*/
   width: 0em;
+  display: none;
 }
